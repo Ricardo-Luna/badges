@@ -5,6 +5,8 @@ import confLogo from "../images/badgeimg.svg";
 class Badge extends React.Component {
     
   render() {
+
+
     return (
         
       <div className ="Badge">
@@ -34,3 +36,5 @@ class Badge extends React.Component {
 export default Badge;
 
 //RENDER ES OBLIGATORIO
+
+

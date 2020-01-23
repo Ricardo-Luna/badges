@@ -1,19 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Badge from './components/Badge'
-import './global.css'
-import 'bootstrap/dist/css/bootstrap.css'
+
+import "./global.css";
+import "bootstrap/dist/css/bootstrap.css";
+import App from './components/App.js'
+
 
 const container = document.getElementById("app");
 
 //ReactDOM (QUÉ QUEREMOS RENDERIZAR, DÓNDE LO QUEREMOS RENDERIZAR)
-ReactDOM.render(<Badge 
-    firstName="Ricardo" 
-    lastName="Luna" 
-    jobTitle="Jefe de EGobierno" 
-    twitter= "Rickylunat"
-    avatar="https://en.gravatar.com/userimage/178172579/86bbc458fb1822ae38c495ad9add016b.jpg?size=200"
-    />, container);
+ReactDOM.render(<App />, container);
 
 
 
@@ -21,9 +17,13 @@ ReactDOM.render(<Badge
 
 
 
-
-
-
+//  ReactDOM.render(<Badge
+//      firstName="Ricardo"
+//      lastName="Luna"
+//      jobTitle="Jefe de EGobierno"
+//      twitter= "Rickylunat"
+//      avatar="https://en.gravatar.com/userimage/178172579/86bbc458fb1822ae38c495ad9add016b.jpg?size=200"
+//      />, container);
 
 //ELEMENTOS ANIDADOS
 //JSX VS CREATE ELEMENT
@@ -45,7 +45,6 @@ ReactDOM.render(<Badge
 
 //|-element.innerText = 'Hello'
 //|||const element = <h1>Hello, Platzi Badgess</h1>
-
 
 ///   EQUIVALENTES
 //|||const element = React.createElement('h1',{},'Hola, soy children')
