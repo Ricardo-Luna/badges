@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
+import logo from "../images/logo.svg";
+import "./styles/NotFound.css";
 
 function NotFound() {
-  return <h1>404: Not Found</h1>;
+  return (
+    <div>
+      <h1 className="NotFound" >
+          404: Not Found
+          <img src={logo} alt="NotFound"/>
+          </h1>
+     
+    </div>
+  )
 }
-
 export default NotFound;
